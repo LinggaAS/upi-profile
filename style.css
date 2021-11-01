@@ -55,6 +55,13 @@ nav ul li:hover > ul {
 	transition: 0.3s linear;
 }
 
+p {
+	color: white;
+}
+
+ul {
+	color: white;
+}
 nav ul ul li {
 	width: 150px;
 	display: list-item;
@@ -85,4 +92,9 @@ section {
 
 #link-href {
 	text-decoration: none;
+}
+
+body {
+	overflow-y: scroll;
+	background-color: #042331;
 }
