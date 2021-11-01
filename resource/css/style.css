@@ -1,0 +1,267 @@
+/* My Own Css */
+body {
+    font: arial, sans-serif;
+    background-color: white;
+    color: #252525;
+    /* background-size: cover;
+    background-position: 0 -200px; */
+}
+
+.top-bar {
+    position: relative;
+    top: 0;
+    left: 0; right: 0;
+    height: 110px;
+    background-color: white;
+    z-index: 999;
+}
+
+.top-bar img {
+    height: 100px;
+    margin-left: 30px;
+    float: left;
+}
+
+.top-bar h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.container {
+    margin: auto 0;
+    background-color: white;
+    position: relative;
+
+}
+
+.header {
+    padding: 20px;
+    background-color:#083a6f;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero {
+    height: 400px;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: 0 -50px;
+    position: relative;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.50);
+}
+
+.hero h1 {
+    color: white;
+    font-size: 50px;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.hero p {
+    color: white;
+    font-size: 25px;
+    position: relative;
+    padding-left: 100px;
+    margin-top: 10px;
+}
+
+.main {
+    width: 70%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.kiri{
+    height: 350px;
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .writer {
+    font-size: 11px;
+    margin-top: -15px;
+}
+
+.main .writer a {
+    text-decoration: none;
+}
+
+.main p{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.sidebar {
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    margin-top: 15px;
+    font-size: 25px;
+    list-style-type: square;
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color:#323232;
+    padding: 3px;
+}
+
+.sidebar a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+.rss {
+    float: left;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.feed-title{
+    font-size: 30px;
+    margin-left: 10px;
+}
+.feed-title a{
+    text-decoration: none;
+}
+
+.feed-item-title {
+    font-size: 20px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.feed-item-title a {
+    text-decoration: none;
+    color: #323232;
+}
+
+.feed-title a:hover, .feed-item-title a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.footer {
+    background-color: #083a6f;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/*CSS Formatting */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ClearFix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
